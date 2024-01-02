@@ -37,10 +37,20 @@ public class App {
         System.out.println(fullName.substring(6, 9).startsWith("d"));
 
         double amountKWD = 86;
+        double amountUSD2 = 86;
+        double amountEuro2 = 86;
+
+        double amountEuro = amountKWD * 2.97;
 
         double amountUSD = amountKWD * 3.25;
 
         System.out.println(amountKWD + " KWD = " + amountUSD + " USD");
+        System.out.println(amountKWD + " KWD = " + amountEuro + " Euro");
+
+        System.out.println(amountUSD2 + " USD = " + amountKWD / 3.25 + " kwd");
+
+        System.out.println(amountEuro2 + " Euro = " + amountKWD / 2.97 + " kwd");
 
     }
+
 }
